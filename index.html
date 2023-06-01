@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Atlas Packers & Movers</title>
+    <style>
+      .form1 {
+        width: 75%;
+        background-color: #548ea3;
+        margin-left: 13%;
+        padding: 10px;
+      }
+      h2 {
+        width: 50%;
+        text-align: center;
+        color: #c21807;
+        background-color: white;
+        margin: auto;
+        margin-bottom: 20px;
+        border-radius: 6px;
+      }
+      table {
+        border: 1px solid #fff;
+        width: 95%;
+        padding: 2px;
+        margin-left: 10px;
+        border-radius: 7px;
+      }
+      td {
+        border: 1px solid gainsboro;
+        border-radius: 7px;
+        height: 25px;
+        width: 50%;
+        color: #fff;
+      }
+      a {
+        color: white;
+        padding: 4px;
+      }
+      #city {
+        width: 50%;
+        margin-left: 2px;
+      }
+      #date {
+        width: 98%;
+        margin-left: 2px;
+      }
+      #faddress,
+      #taddress {
+        width: 97.5%;
+        height: 75px;
+        margin-left: 2px;
+      }
+      #distance {
+        width: 75%;
+      }
+      #cname,
+      #phno,
+      #email {
+        width: 97.5%;
+        margin-left: 2px;
+      }
+      #reloc,
+      #personal,
+      #quote {
+        color: #c21807;
+        margin-left: 2px;
+      }
+      #submit {
+        color: #c21807;
+        margin-top: 25px;
+        margin-left: 10px;
+        border: 1px solid black;
+        padding: 4px;
+        font-weight: 600;
+        border-radius: 6px;
+      }
+      #submit:hover {
+        background-color: #c21807;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="" class="form1">
+      <h2>Atlas Packers & Movers</h2>
+      <table>
+        <tbody>
+          <tr>
+            <td colspan="2">
+              <a id="reloc_info" href="#reloc">Relocation-info</a><br />
+              <a id="personal_info" href="#personal">Personal-info</a><br />
+              <a id="quote_info" href="#quote">Get a quote!</a>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="reloc">Relocation Information</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <select name="" id="city">
+                <option value="Select Your City">
+                  Select your current city
+                </option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Bangalore">Bangalore</option>
+                <option value="Mumbai">Mumbai</option>
+              </select>
+            </td>
+            <td>
+              <label for="date"></label>
+              <input type="date" id="date" />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label for="category">Select Category</label>
+            </td>
+            <td>
+              <input type="radio" id="home" name="category" />
+              <label for="home">Home Relocation</label>
+              <input type="radio" id="factory" name="category" />
+              <label for="factory">Factory/Office Relocation</label>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="text" id="faddress" placeholder="From address" />
+            </td>
+            <td>
+              <input type="text" id="taddress" placeholder="To address" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="distance">Distance in km(approx)</label></td>
+            <td>
+              <input type="range" id="distance" min="0" max="2000" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="personal">Personal Information</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Customer Name</td>
+            <td>
+              <input
+                type="text"
+                id="cname"
+                placeholder="Enter the cusstomer name"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Phone Number</td>
+            <td>
+              <input
+                type="tel"
+                id="phno"
+                placeholder="Enter the phone number"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td>Email ID</td>
+            <td>
+              <input type="email" id="email" placeholder="Enter the email id" />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="quote">Get a quote</label>
+            </td>
+          </tr>
+          <tr>
+            <td>Possible charges involved</td>
+            <td>
+              <input type="checkbox" id="packing" name="category" />
+              <label for="packing">Packing Charges</label>
+              <input type="checkbox" id="loading" name="category" />
+              <label for="loading">Loading Charges</label><br />
+              <input type="checkbox" id="transportation" name="category" />
+              <label for="transportation">Transportation Charges</label>
+              <input type="checkbox" id="unloading" name="category" />
+              <label for="unloading">Unloading Charges</label><br />
+              <input type="checkbox" id="unpacking" name="category" />
+              <label for="unpacking">Unpacking Charges</label>
+              <input type="checkbox" id="escort" name="category" />
+              <label for="escort">Escort</label>
+              <input type="checkbox" id="octroi" name="category" />
+              <label for="octroi">Octroi</label>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2">
+              <label id="condition">
+                **Quote you will receive will include service tax of 12.3%
+              </label>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <input type="button" id="submit" value="GET A QUOTE" />
+    </form>
+  </body>
+</html>
